@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+* {
+    font-family: 'Mali', cursive;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+}
+
+.wrapper {
+    border: 1px solid black;
+    height: inherit;
+    width: 900px;
+
+    animation: backgroundAnimation 15s infinite linear;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: rgba(7, 93, 104, 0.548)
+    }
+
+    25% {
+        background-color: rgba(22, 7, 104, 0.548)
+    }
+
+    50% {
+        background-color: rgba(7, 93, 104, 0.548)
+    }
+
+    75% {
+        background-color: rgba(22, 7, 104, 0.548)
+    }
+
+    100% {
+        background-color: rgba(7, 93, 104, 0.548)
+    }
+}
+
+.text-area {
+    border: 1px solid black;
+    width: 457px;
+}
+
+.notes,
+.app {
+    border: 1px solid black;
+    margin-top: 50px;
+
+    height: inherit;
+    width: 900px;
+
+    animation: backgroundAnimation 15s infinite linear;
+}
+
+.button {
+    margin-top: 10px;
+
+    height: 25px;
+    width: 150px;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: black;
+    color: aqua;
+}
+
+.button:hover {
+    color: black;
+    background-color: aqua;
+    cursor: crosshair;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 800px;
+}
+
+.note {
+    margin-bottom: 20px;
+
+    width: 820px;
+    height: 80px;
+
+    border: 0.1px dotted white;
+}
+
+.listen-note:hover {
+    color: aqua;
+}
+
+.delete-note:hover {
+    color: red;
+}
+
+.content {
+    color: black;
+    border: 0.1px dotted white;
+    
+    height: 27px;
+    width: 820px;
+}
