@@ -206,7 +206,7 @@ document.getElementById('perform-note-btn').addEventListener('click', function (
 
   if(userInput.includes('launch') == true || userInput.includes('open') == true) {
     if(userInput.includes('youtube')) {
-      window.location.href = 'https://youtube.co.uk'
+        window.open('https://youtube.co.uk')
     }
 
   if(userInput.includes('try me') == true) {
